@@ -1,134 +1,139 @@
 body {
-   /* background-color: rgba(0, 51, 102, 0.8);*/ /* Semi-transparent black */
-     background-image: url('altheim.jpg');
-    background-size: cover; /* Adjust this as needed */
-
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-	
-	
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity (0.0 to 1.0) */
-    z-index: -1; /* Adjust the z-index to ensure the overlay is on top of the background */
-}
-
-/* For 50 coll screens */
-/* #chart {
-    width: 70%; 
-    height: 70%; 
-    max-width: 900px; 
-    max-height: 900px; 
-    margin: auto; 
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    top: 20%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    width: 20%; 
-    height: 10%; 
-    max-width: 30%; 
-    max-height: 20%; 
-    padding: 20px;
-    background-color: #fefefe;
-    border: 1px solid #888;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 0.6vw; 
-} */
-
-
-#chart {
-    width: 90vw; /* Adjusted width */
-    height: 90vw; /* Adjusted height */
-    max-width: 700px; /* Maximum width */
-    max-height: 700px; /* Maximum height */
-    margin: auto; /* Center horizontally */
-    position: relative;
-    font-weight: bold;
-    /* font-size: 24px; Adjust the font size as needed */
-}
-
-
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: calc(55%); /* Adjusted left position */
-    top: calc(25%); /* Adjusted top position */
-    transform: translate(-50%, -50%);
-    width: 20%; /* Adjusted width relative to viewport width */
-    height: 10%; /* Adjusted height relative to viewport height */
-    max-width: 30%; /* Maximum width */
-    max-height: 20%; /* Maximum height */
-    padding: 20px;
-    background-color: #fefefe;
-    border: 1px solid #888;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 0.6vw; /* Adjusted font size */
-}
-
-
-.popup-content {
-    margin-bottom: 20px;
-}
-
-.close {
-    display: block;
-    color: #aaa;
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#close-button {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    background-color: rgb(198, 110, 29);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#close-button:hover {
-    background-color: #d32f2f;
-}
-
-.circle {
-    fill: rgba(0, 51, 102, 1);
-    cursor: pointer;
-}
-
-.text {
-    font-weight: bold;
-    font-size: 3vw; /* Adjusted font size */
-    fill: rgb(198, 110, 29);
-    pointer-events: none;
-}
+    /* background-color: rgba(0, 51, 102, 0.8);*/ /* Semi-transparent black */
+      background-image: url('altheim.jpg');
+     background-size: cover; /* Adjust this as needed */
+ 
+     margin: 0;
+     padding: 0;
+     font-family: Helvetica, Arial, sans-serif;
+     
+     
+ }
+ 
+ body::before {
+     content: "";
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity (0.0 to 1.0) */
+     z-index: -1; /* Adjust the z-index to ensure the overlay is on top of the background */
+ }
+ 
+ /* For 50 coll screens */
+ /* #chart {
+     width: 70%; 
+     height: 70%; 
+     max-width: 900px; 
+     max-height: 900px; 
+     margin: auto; 
+     position: absolute;
+     top: 30%;
+     left: 40%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .popup {
+     display: none;
+     position: fixed;
+     z-index: 9999;
+     top: 20%;
+     left: 53%;
+     transform: translate(-50%, -50%);
+     width: 20%; 
+     height: 10%; 
+     max-width: 30%; 
+     max-height: 20%; 
+     padding: 20px;
+     background-color: #fefefe;
+     border: 1px solid #888;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     font-size: 0.6vw; 
+ } */
+ 
+ 
+ #chart {
+     /*width: 90vw; /* Adjusted width */
+     /*height: 90vw; /* Adjusted height */
+     /*max-width: 700px; /* Maximum width */
+     /*max-height: 700px; /* Maximum height */
+     margin: auto; /* Center horizontally */
+     position: relative;
+     font-weight: bold;
+     /* font-size: 24px; Adjust the font size as needed */
+ }
+ 
+ 
+ .popup {
+     position: fixed;
+     top: 15%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 50%;
+     display: none;
+     z-index: 9999;
+     /*left: calc(47%); /* Adjusted left position */
+     /*top: calc(13%); /* Adjusted top position */
+     /*transform: translate(-50%, -50%);
+     width: 20%; /* Adjusted width relative to viewport width */
+     height: 10%; /* Adjusted height relative to viewport height */
+     max-width: 30%; /* Maximum width */
+     max-height: 20%; /* Maximum height */
+     padding: 20px;
+     background-color: #fefefe;
+     border: 1px solid #888;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     font-size: 0.6vw; /* Adjusted font size */
+ }
+ 
+ 
+ .popup-content {
+     margin-bottom: 20px;
+ }
+ 
+ .close {
+     display: block;
+     color: #aaa;
+     float: right;
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration: none;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ #close-button {
+     display: block;
+     width: 100%;
+     padding: 10px 0;
+     background-color: rgb(198, 110, 29);
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ #close-button:hover {
+     background-color: #d32f2f;
+ }
+ 
+ .circle {
+     fill: rgba(0, 51, 102, 1);
+     cursor: pointer;
+ }
+ 
+ .text {
+     font-weight: bold;
+     font-size: 3vw; /* Adjusted font size */
+     fill: rgb(198, 110, 29);
+     pointer-events: none;
+ }
+ 

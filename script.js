@@ -73,8 +73,16 @@ document.addEventListener("keydown", function(event) {
         spin();
         //Close the popup
         document.getElementById("popup").style.display = "none";
+    } else if (event.keyCode === 32) { // Check if the pressed key is Space
+        // Execute the spin function when Space is pressed
+        spin();
+        // Close the popup if it's open
+        if (document.getElementById("popup").style.display === "block") {
+            document.getElementById("popup").style.display = "none";
+        }
     }
 });
+
 
 function spin(d) {
     container.on("click", null);
